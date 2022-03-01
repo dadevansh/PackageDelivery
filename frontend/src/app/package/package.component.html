@@ -1,0 +1,68 @@
+<form [formGroup]="addPackage" (ngSubmit)="SaveData()">
+    <div class="form-group">
+        <label for="packageType">type</label>
+        <input 
+            id="packageType"
+            type="text" 
+            class="form-control"
+            formControlName="packageType">
+    </div>
+    <div class="form-group">
+        <label for="weight">weight</label>
+        <input id="weight" 
+        type="number" 
+        class = "form-control"
+        formControlName="weight"/>
+    </div>
+    <div class="form-group">
+        <label for="length">length</label>
+        <input 
+        id="length" 
+        type="number" 
+        class = "form-control"
+        formControlName="length"/>
+    </div>
+    <div class="form-group">
+        <label for="breadth">breadth</label>
+        <input 
+            id="breadth" 
+            type="number" 
+            class = "form-control"
+            formControlName="breadth"/>
+    </div>
+    <div class="form-group">
+        <label for="pic">Submit picture</label>
+        <input 
+            id="pic" 
+            type="file" 
+            class = "form-control"
+            formControlName="picture"/>
+    </div>
+    <div class="form-group">
+        <label for="pick">pickup address</label>
+        <input 
+            id="pick" 
+            type="text" 
+            class = "form-control"
+            formControlName="pick"/>
+    </div>
+    <div class="form-group">
+        <label for="drop">drop address</label>
+        <input 
+            id="drop" 
+            type="text" 
+            class = "form-control"
+            formControlName="drop"/>
+    </div>
+    <div class="form-group">
+        <label for="altPhn">Alternate Phone number</label>
+        <input 
+            id="altPhn" 
+            type="tel" 
+            class = "form-control" 
+            pattern="[0-9]{10}" 
+            required
+            formControlName="altPhn"/>
+    </div>
+    <button class="btn btn-primary">submit</button>
+</form>
